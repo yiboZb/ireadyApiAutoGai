@@ -1,0 +1,16 @@
+2022-02-20 08:45:36.095 | INFO     | tools.handle_excel:__init__:13 - 当前打开的excel文件为:F:\Pychram-Workspace\ireadyApiAuto\testdatas\cases.xlsx
+2022-02-20 08:45:36.118 | INFO     | tools.handle_excel:select_sheet_by_name:24 - 当前正在操作的表单名是:登录
+2022-02-20 08:45:36.119 | INFO     | tools.handle_excel:read_all_rows_data:41 - 用例数据为:
+{'id': 1, 'title': '数字孪生登录', 'method': 'post', 'url': 'api/certification/modelLoginSBH', 'pre_sql': None, 'req_data': '{\n    "userName": "ireadyit",\n    "password": "156b8903c4bb6fbf2b627cd65da76082",\n    "modelLoginType": 2,\n    "loginType": 1\n}', 'code': None, 'asert_expr': '[{"expr":"$.code","expected":0,"compare_type":"=="},\n{"expr":"$.msg","expected":"成功","compare_type":"=="}]', 'extract': None, 'assert_db': None}
+2022-02-20 08:45:36.120 | INFO     | test_01_login:setUpClass:27 - 
+============= 登录 接口测试开始！ ==============
+2022-02-20 08:45:36.120 | INFO     | test_01_login:test_login:38 - 
+********* 数字孪生登录 用例 ********
+2022-02-20 08:45:36.121 | INFO     | tools.handle_requests:__header:53 - 请求headers为：{'Content-Type': 'application/json'}
+2022-02-20 08:45:36.121 | INFO     | tools.handle_requests:__url:60 - 请求url为：http://192.168.88.128:20000/api/certification/modelLoginSBH
+2022-02-20 08:45:36.121 | INFO     | tools.handle_requests:send_req:37 - 请求method为：post
+2022-02-20 08:45:36.175 | INFO     | tools.handle_requests:send_req:45 - http响应状态码为：200
+2022-02-20 08:45:36.175 | INFO     | tools.handle_requests:send_req:46 - 响应body为：
+{"result":1,"errCode":"0000","msg":"JSON parse error: Cannot construct instance of `com.ireadyit.insightsx.certification.center.beans.bo.ModelLoginSBHBo` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('{\n    \"userName\": \"ireadyit\",\n    \"password\": \"156b8903c4bb6fbf2b627cd65da76082\",\n    \"modelLoginType\": 2,\n    \"loginType\": 1\n}'); nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot construct instance of `com.ireadyit.insightsx.certification.center.beans.bo.ModelLoginSBHBo` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('{\n    \"userName\": \"ireadyit\",\n    \"password\": \"156b8903c4bb6fbf2b627cd65da76082\",\n    \"modelLoginType\": 2,\n    \"loginType\": 1\n}')\n at [Source: (PushbackInputStream); line: 1, column: 1]","exception":"HttpMessageNotReadableException"}
+2022-02-20 08:45:36.179 | INFO     | test_01_login:tearDownClass:33 - 
+============= 登录 接口测试结束！ ==============

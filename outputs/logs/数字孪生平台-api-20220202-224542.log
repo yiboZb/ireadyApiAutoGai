@@ -1,0 +1,159 @@
+2022-02-21 22:45:42.725 | INFO     | tools.handle_excel:__init__:13 - 当前打开的excel文件为:F:\Pychram-Workspace\ireadyApiAuto\testdatas\cases.xlsx
+2022-02-21 22:45:42.753 | INFO     | tools.handle_excel:select_sheet_by_name:24 - 当前正在操作的表单名是:登录
+2022-02-21 22:45:42.753 | INFO     | tools.handle_excel:read_all_rows_data:41 - 用例数据为:
+{'id': 1, 'title': '数字孪生登录', 'method': 'post', 'url': 'api/certification/modelLoginSBH', 'pre_sql': None, 'req_data': '{\n    "userName": "ireadyit",\n    "password": "156b8903c4bb6fbf2b627cd65da76082",\n    "modelLoginType": 2,\n    "loginType": 1\n}', 'code': None, 'asert_expr': '[{"expr":"$.result","expected":0,"compare_type":"=="},\n{"expr":"$.msg","expected":"成功","compare_type":"=="}]', 'extract': None, 'assert_db': None}
+2022-02-21 22:45:42.759 | INFO     | tools.handle_excel:__init__:13 - 当前打开的excel文件为:F:\Pychram-Workspace\ireadyApiAuto\testdatas\cases.xlsx
+2022-02-21 22:45:42.782 | INFO     | tools.handle_excel:select_sheet_by_name:24 - 当前正在操作的表单名是:Dashboard
+2022-02-21 22:45:42.783 | INFO     | tools.handle_excel:read_all_rows_data:41 - 用例数据为:
+{'id': 0, 'title': '前置 - 登录成功', 'method': 'post', 'url': 'api/certification/modelLoginSBH', 'pre_sql': None, 'req_data': '{"userName": "ireadyit","password": "8f863a0df0e34587f731220048a2583f","modelLoginType": 2,"loginType": 1}', 'extract': None, 'asert_expr': None, 'code': None, 'assert_db': None}
+2022-02-21 22:45:42.783 | INFO     | tools.handle_excel:read_all_rows_data:41 - 用例数据为:
+{'id': None, 'title': '通过Id找到公司详细信息', 'method': 'post', 'url': '/api/tenant/company/findCompanyDetailById', 'pre_sql': None, 'req_data': '{"id":8}', 'extract': None, 'asert_expr': '[{"expr":"$..result","expected":0,"compare_type":"=="},\n{"expr":"$..msg","expected":"成功","compare_type":"=="}]', 'code': None, 'assert_db': None}
+2022-02-21 22:45:42.783 | INFO     | tools.handle_excel:read_all_rows_data:41 - 用例数据为:
+{'id': None, 'title': None, 'method': None, 'url': None, 'pre_sql': None, 'req_data': None, 'extract': None, 'asert_expr': None, 'code': None, 'assert_db': None}
+2022-02-21 22:45:42.783 | INFO     | tools.handle_excel:read_all_rows_data:41 - 用例数据为:
+{'id': None, 'title': None, 'method': None, 'url': None, 'pre_sql': None, 'req_data': None, 'extract': None, 'asert_expr': None, 'code': None, 'assert_db': None}
+2022-02-21 22:45:42.783 | INFO     | tools.handle_excel:read_all_rows_data:41 - 用例数据为:
+{'id': None, 'title': None, 'method': None, 'url': None, 'pre_sql': None, 'req_data': None, 'extract': None, 'asert_expr': None, 'code': None, 'assert_db': None}
+2022-02-21 22:45:42.784 | INFO     | tools.handle_excel:read_all_rows_data:41 - 用例数据为:
+{'id': None, 'title': None, 'method': None, 'url': None, 'pre_sql': None, 'req_data': None, 'extract': None, 'asert_expr': None, 'code': None, 'assert_db': None}
+2022-02-21 22:45:42.784 | INFO     | tools.handle_excel:read_all_rows_data:41 - 用例数据为:
+{'id': None, 'title': None, 'method': None, 'url': None, 'pre_sql': None, 'req_data': None, 'extract': None, 'asert_expr': None, 'code': None, 'assert_db': None}
+2022-02-21 22:45:42.784 | INFO     | tools.handle_excel:read_all_rows_data:41 - 用例数据为:
+{'id': None, 'title': None, 'method': None, 'url': None, 'pre_sql': None, 'req_data': None, 'extract': None, 'asert_expr': None, 'code': None, 'assert_db': None}
+2022-02-21 22:45:42.784 | INFO     | tools.handle_excel:read_all_rows_data:41 - 用例数据为:
+{'id': None, 'title': None, 'method': None, 'url': None, 'pre_sql': None, 'req_data': None, 'extract': None, 'asert_expr': None, 'code': None, 'assert_db': None}
+2022-02-21 22:45:42.784 | INFO     | tools.handle_excel:read_all_rows_data:41 - 用例数据为:
+{'id': None, 'title': None, 'method': None, 'url': None, 'pre_sql': None, 'req_data': None, 'extract': None, 'asert_expr': None, 'code': None, 'assert_db': None}
+2022-02-21 22:45:42.784 | INFO     | tools.handle_excel:read_all_rows_data:41 - 用例数据为:
+{'id': None, 'title': None, 'method': None, 'url': None, 'pre_sql': None, 'req_data': None, 'extract': None, 'asert_expr': None, 'code': None, 'assert_db': None}
+2022-02-21 22:45:42.785 | INFO     | tools.handle_excel:read_all_rows_data:41 - 用例数据为:
+{'id': None, 'title': None, 'method': None, 'url': None, 'pre_sql': None, 'req_data': None, 'extract': None, 'asert_expr': None, 'code': None, 'assert_db': None}
+2022-02-21 22:45:42.785 | INFO     | tools.handle_excel:read_all_rows_data:41 - 用例数据为:
+{'id': None, 'title': None, 'method': None, 'url': None, 'pre_sql': None, 'req_data': None, 'extract': None, 'asert_expr': None, 'code': None, 'assert_db': None}
+2022-02-21 22:45:42.799 | INFO     | tools.handle_excel:read_all_rows_data:41 - 用例数据为:
+{'id': None, 'title': None, 'method': None, 'url': None, 'pre_sql': None, 'req_data': None, 'extract': None, 'asert_expr': None, 'code': None, 'assert_db': None}
+2022-02-21 22:45:42.799 | INFO     | tools.handle_excel:read_all_rows_data:41 - 用例数据为:
+{'id': None, 'title': None, 'method': None, 'url': None, 'pre_sql': None, 'req_data': None, 'extract': None, 'asert_expr': None, 'code': None, 'assert_db': None}
+2022-02-21 22:45:42.800 | INFO     | tools.handle_excel:read_all_rows_data:41 - 用例数据为:
+{'id': None, 'title': None, 'method': None, 'url': None, 'pre_sql': None, 'req_data': None, 'extract': None, 'asert_expr': None, 'code': None, 'assert_db': None}
+2022-02-21 22:45:42.800 | INFO     | tools.handle_excel:read_all_rows_data:41 - 用例数据为:
+{'id': None, 'title': None, 'method': None, 'url': None, 'pre_sql': None, 'req_data': None, 'extract': None, 'asert_expr': None, 'code': None, 'assert_db': None}
+2022-02-21 22:45:42.800 | INFO     | tools.handle_excel:read_all_rows_data:41 - 用例数据为:
+{'id': None, 'title': None, 'method': None, 'url': None, 'pre_sql': None, 'req_data': None, 'extract': None, 'asert_expr': None, 'code': None, 'assert_db': None}
+2022-02-21 22:45:42.800 | INFO     | tools.handle_excel:read_all_rows_data:41 - 用例数据为:
+{'id': None, 'title': None, 'method': None, 'url': None, 'pre_sql': None, 'req_data': None, 'extract': None, 'asert_expr': None, 'code': None, 'assert_db': None}
+2022-02-21 22:45:42.800 | INFO     | tools.handle_excel:read_all_rows_data:41 - 用例数据为:
+{'id': None, 'title': None, 'method': None, 'url': None, 'pre_sql': None, 'req_data': None, 'extract': None, 'asert_expr': None, 'code': None, 'assert_db': None}
+2022-02-21 22:45:42.801 | INFO     | tools.handle_excel:read_all_rows_data:41 - 用例数据为:
+{'id': None, 'title': None, 'method': None, 'url': None, 'pre_sql': None, 'req_data': None, 'extract': None, 'asert_expr': None, 'code': None, 'assert_db': None}
+2022-02-21 22:45:42.802 | INFO     | test_01_login:setUpClass:28 - 
+============= 登录 接口测试开始！ ==============
+2022-02-21 22:45:42.802 | INFO     | test_01_login:test_login:39 - 
+********* 数字孪生登录 用例 ********
+2022-02-21 22:45:42.803 | INFO     | tools.handle_requests:__header:56 - 请求headers为：{'Content-Type': 'application/json'}
+2022-02-21 22:45:42.803 | INFO     | tools.handle_requests:__url:79 - 请求url为：http://192.168.88.128:20000/api/certification/modelLoginSBH
+2022-02-21 22:45:42.803 | INFO     | tools.handle_requests:send_req:38 - 请求method为：post
+2022-02-21 22:45:42.803 | INFO     | tools.handle_requests:__body:71 - 请求datas为：{
+    "userName": "ireadyit",
+    "password": "156b8903c4bb6fbf2b627cd65da76082",
+    "modelLoginType": 2,
+    "loginType": 1
+}
+2022-02-21 22:45:43.030 | INFO     | tools.handle_requests:send_req:48 - http响应状态码为：200
+2022-02-21 22:45:43.031 | INFO     | tools.handle_requests:send_req:49 - 响应body为：
+{"result":0,"msg":"成功","data":"TE+LXVvH14ka6mKOTPLm51mefjtSOOD2a3hOWO9JA5GBgVXhyvur9soimxJugvc5FTfuwFaIby0wFWjVa9NQ90MW03jVZl2KlHu/iwEoF8I="}
+2022-02-21 22:45:43.032 | INFO     | tools.handle_assert:assert_resp:20 - 断言表达式、期望结果和比对方式为：
+{'expr': '$.result', 'expected': 0, 'compare_type': '=='}
+2022-02-21 22:45:43.035 | INFO     | tools.handle_assert:assert_resp:23 - 提取的jsonpath表达式为：$.result
+2022-02-21 22:45:43.035 | INFO     | tools.handle_assert:assert_resp:24 - 提取之后的结果为(为列表，比对的是列表里面的值)：[0]
+2022-02-21 22:45:43.036 | INFO     | tools.handle_assert:assert_resp:25 - 期望结果为：0
+2022-02-21 22:45:43.036 | INFO     | tools.handle_assert:assert_resp:27 - 比对期望和实际是否相等！
+2022-02-21 22:45:43.037 | INFO     | tools.handle_assert:assert_resp:30 - 比对成功！
+2022-02-21 22:45:43.037 | INFO     | tools.handle_assert:assert_resp:20 - 断言表达式、期望结果和比对方式为：
+{'expr': '$.msg', 'expected': '成功', 'compare_type': '=='}
+2022-02-21 22:45:43.037 | INFO     | tools.handle_assert:assert_resp:23 - 提取的jsonpath表达式为：$.msg
+2022-02-21 22:45:43.038 | INFO     | tools.handle_assert:assert_resp:24 - 提取之后的结果为(为列表，比对的是列表里面的值)：['成功']
+2022-02-21 22:45:43.038 | INFO     | tools.handle_assert:assert_resp:25 - 期望结果为：成功
+2022-02-21 22:45:43.039 | INFO     | tools.handle_assert:assert_resp:27 - 比对期望和实际是否相等！
+2022-02-21 22:45:43.039 | INFO     | tools.handle_assert:assert_resp:30 - 比对成功！
+2022-02-21 22:45:43.040 | INFO     | test_01_login:tearDownClass:34 - 
+============= 登录 接口测试结束！ ==============
+2022-02-21 22:45:43.040 | INFO     | test_02_Dashboard:setUpClass:26 - 
+============= Dashboard 接口测试开始！ ==============
+2022-02-21 22:45:43.041 | INFO     | test_02_Dashboard:test_recharge:34 - 
+********* 前置 - 登录成功 用例 ********
+2022-02-21 22:45:43.043 | INFO     | tools.handle_requests:__header:56 - 请求headers为：{'Content-Type': 'application/json'}
+2022-02-21 22:45:43.043 | INFO     | tools.handle_requests:__url:79 - 请求url为：http://192.168.88.128:20000/api/certification/modelLoginSBH
+2022-02-21 22:45:43.044 | INFO     | tools.handle_requests:send_req:38 - 请求method为：post
+2022-02-21 22:45:43.044 | INFO     | tools.handle_requests:__body:71 - 请求datas为：{"userName": "ireadyit","password": "8f863a0df0e34587f731220048a2583f","modelLoginType": 2,"loginType": 1}
+2022-02-21 22:45:43.195 | INFO     | tools.handle_requests:send_req:48 - http响应状态码为：200
+2022-02-21 22:45:43.195 | INFO     | tools.handle_requests:send_req:49 - 响应body为：
+{"result":1,"errCode":"0000","msg":"登陆失败，密码错误"}
+2022-02-21 22:45:43.196 | INFO     | test_02_Dashboard:test_recharge:34 - 
+********* 通过Id找到公司详细信息 用例 ********
+2022-02-21 22:45:43.196 | INFO     | tools.handle_requests:__header:56 - 请求headers为：{'Content-Type': 'application/json'}
+2022-02-21 22:45:43.196 | INFO     | tools.handle_requests:__url:79 - 请求url为：http://192.168.88.128:20000//api/tenant/company/findCompanyDetailById
+2022-02-21 22:45:43.197 | INFO     | tools.handle_requests:send_req:38 - 请求method为：post
+2022-02-21 22:45:43.197 | INFO     | tools.handle_requests:__body:71 - 请求datas为：{"id":8}
+2022-02-21 22:45:43.240 | INFO     | tools.handle_requests:send_req:48 - http响应状态码为：401
+2022-02-21 22:45:43.240 | INFO     | tools.handle_requests:send_req:49 - 响应body为：
+
+2022-02-21 22:45:43.251 | INFO     | test_02_Dashboard:test_recharge:34 - 
+********* None 用例 ********
+2022-02-21 22:45:43.252 | INFO     | tools.handle_requests:__header:56 - 请求headers为：{'Content-Type': 'application/json'}
+2022-02-21 22:45:43.254 | INFO     | test_02_Dashboard:test_recharge:34 - 
+********* None 用例 ********
+2022-02-21 22:45:43.255 | INFO     | tools.handle_requests:__header:56 - 请求headers为：{'Content-Type': 'application/json'}
+2022-02-21 22:45:43.256 | INFO     | test_02_Dashboard:test_recharge:34 - 
+********* None 用例 ********
+2022-02-21 22:45:43.257 | INFO     | tools.handle_requests:__header:56 - 请求headers为：{'Content-Type': 'application/json'}
+2022-02-21 22:45:43.259 | INFO     | test_02_Dashboard:test_recharge:34 - 
+********* None 用例 ********
+2022-02-21 22:45:43.260 | INFO     | tools.handle_requests:__header:56 - 请求headers为：{'Content-Type': 'application/json'}
+2022-02-21 22:45:43.261 | INFO     | test_02_Dashboard:test_recharge:34 - 
+********* None 用例 ********
+2022-02-21 22:45:43.262 | INFO     | tools.handle_requests:__header:56 - 请求headers为：{'Content-Type': 'application/json'}
+2022-02-21 22:45:43.263 | INFO     | test_02_Dashboard:test_recharge:34 - 
+********* None 用例 ********
+2022-02-21 22:45:43.264 | INFO     | tools.handle_requests:__header:56 - 请求headers为：{'Content-Type': 'application/json'}
+2022-02-21 22:45:43.265 | INFO     | test_02_Dashboard:test_recharge:34 - 
+********* None 用例 ********
+2022-02-21 22:45:43.266 | INFO     | tools.handle_requests:__header:56 - 请求headers为：{'Content-Type': 'application/json'}
+2022-02-21 22:45:43.267 | INFO     | test_02_Dashboard:test_recharge:34 - 
+********* None 用例 ********
+2022-02-21 22:45:43.268 | INFO     | tools.handle_requests:__header:56 - 请求headers为：{'Content-Type': 'application/json'}
+2022-02-21 22:45:43.270 | INFO     | test_02_Dashboard:test_recharge:34 - 
+********* None 用例 ********
+2022-02-21 22:45:43.270 | INFO     | tools.handle_requests:__header:56 - 请求headers为：{'Content-Type': 'application/json'}
+2022-02-21 22:45:43.272 | INFO     | test_02_Dashboard:test_recharge:34 - 
+********* None 用例 ********
+2022-02-21 22:45:43.273 | INFO     | tools.handle_requests:__header:56 - 请求headers为：{'Content-Type': 'application/json'}
+2022-02-21 22:45:43.274 | INFO     | test_02_Dashboard:test_recharge:34 - 
+********* None 用例 ********
+2022-02-21 22:45:43.275 | INFO     | tools.handle_requests:__header:56 - 请求headers为：{'Content-Type': 'application/json'}
+2022-02-21 22:45:43.278 | INFO     | test_02_Dashboard:test_recharge:34 - 
+********* None 用例 ********
+2022-02-21 22:45:43.279 | INFO     | tools.handle_requests:__header:56 - 请求headers为：{'Content-Type': 'application/json'}
+2022-02-21 22:45:43.280 | INFO     | test_02_Dashboard:test_recharge:34 - 
+********* None 用例 ********
+2022-02-21 22:45:43.280 | INFO     | tools.handle_requests:__header:56 - 请求headers为：{'Content-Type': 'application/json'}
+2022-02-21 22:45:43.282 | INFO     | test_02_Dashboard:test_recharge:34 - 
+********* None 用例 ********
+2022-02-21 22:45:43.282 | INFO     | tools.handle_requests:__header:56 - 请求headers为：{'Content-Type': 'application/json'}
+2022-02-21 22:45:43.284 | INFO     | test_02_Dashboard:test_recharge:34 - 
+********* None 用例 ********
+2022-02-21 22:45:43.285 | INFO     | tools.handle_requests:__header:56 - 请求headers为：{'Content-Type': 'application/json'}
+2022-02-21 22:45:43.286 | INFO     | test_02_Dashboard:test_recharge:34 - 
+********* None 用例 ********
+2022-02-21 22:45:43.287 | INFO     | tools.handle_requests:__header:56 - 请求headers为：{'Content-Type': 'application/json'}
+2022-02-21 22:45:43.288 | INFO     | test_02_Dashboard:test_recharge:34 - 
+********* None 用例 ********
+2022-02-21 22:45:43.289 | INFO     | tools.handle_requests:__header:56 - 请求headers为：{'Content-Type': 'application/json'}
+2022-02-21 22:45:43.290 | INFO     | test_02_Dashboard:test_recharge:34 - 
+********* None 用例 ********
+2022-02-21 22:45:43.291 | INFO     | tools.handle_requests:__header:56 - 请求headers为：{'Content-Type': 'application/json'}
+2022-02-21 22:45:43.293 | INFO     | test_02_Dashboard:test_recharge:34 - 
+********* None 用例 ********
+2022-02-21 22:45:43.295 | INFO     | tools.handle_requests:__header:56 - 请求headers为：{'Content-Type': 'application/json'}
+2022-02-21 22:45:43.296 | INFO     | test_02_Dashboard:tearDownClass:30 - 
+============= Dashboard 接口测试结束！ ==============

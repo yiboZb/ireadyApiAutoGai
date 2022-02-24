@@ -1,0 +1,73 @@
+2022-02-22 06:00:03.070 | INFO     | tools.handle_excel:__init__:13 - 当前打开的excel文件为:F:\Pychram-Workspace\ireadyApiAuto\testdatas\cases.xlsx
+2022-02-22 06:00:03.108 | INFO     | tools.handle_excel:select_sheet_by_name:24 - 当前正在操作的表单名是:登录
+2022-02-22 06:00:03.108 | INFO     | tools.handle_excel:read_all_rows_data:41 - 用例数据为:
+{'id': 1, 'title': '数字孪生登录', 'method': 'post', 'url': 'api/certification/modelLoginSBH', 'pre_sql': None, 'req_data': '{\n    "userName": "ireadyit",\n    "password": "156b8903c4bb6fbf2b627cd65da76082",\n    "modelLoginType": 2,\n    "loginType": 1\n}', 'code': None, 'asert_expr': '[{"expr":"$.result","expected":0,"compare_type":"=="},\n{"expr":"$.msg","expected":"成功","compare_type":"=="}]', 'extract': None, 'assert_db': None}
+2022-02-22 06:00:03.108 | INFO     | tools.handle_excel:__init__:13 - 当前打开的excel文件为:F:\Pychram-Workspace\ireadyApiAuto\testdatas\cases.xlsx
+2022-02-22 06:00:03.123 | INFO     | tools.handle_excel:select_sheet_by_name:24 - 当前正在操作的表单名是:Dashboard
+2022-02-22 06:00:03.123 | INFO     | tools.handle_excel:read_all_rows_data:41 - 用例数据为:
+{'id': 0, 'title': '前置 - 登录成功', 'method': 'post', 'url': 'api/certification/modelLoginSBH', 'pre_sql': None, 'req_data': '{"userName": "ireadyit","password": "156b8903c4bb6fbf2b627cd65da76082","modelLoginType": 2,"loginType": 1}', 'extract': '{"token":"$..data"}', 'asert_expr': None, 'code': None, 'assert_db': None}
+2022-02-22 06:00:03.123 | INFO     | tools.handle_excel:read_all_rows_data:41 - 用例数据为:
+{'id': None, 'title': '通过Id找到公司详细信息', 'method': 'post', 'url': 'api/tenant/company/findCompanyDetailById', 'pre_sql': None, 'req_data': '{"id":8}', 'extract': None, 'asert_expr': '[{"expr":"$..result","expected":0,"compare_type":"=="},\n{"expr":"$..msg","expected":"成功","compare_type":"=="}]', 'code': None, 'assert_db': None}
+2022-02-22 06:00:03.123 | INFO     | test_01_login:setUpClass:28 - 
+============= 登录 接口测试开始！ ==============
+2022-02-22 06:00:03.123 | INFO     | test_01_login:test_login:36 - 
+********* 数字孪生登录 用例 ********
+2022-02-22 06:00:03.123 | INFO     | tools.handle_requests:__header:56 - 请求headers为：{'Content-Type': 'application/json'}
+2022-02-22 06:00:03.123 | INFO     | tools.handle_requests:__url:79 - 请求url为：http://192.168.88.128:20000/api/certification/modelLoginSBH
+2022-02-22 06:00:03.123 | INFO     | tools.handle_requests:send_req:38 - 请求method为：post
+2022-02-22 06:00:03.293 | INFO     | tools.handle_requests:send_req:48 - http响应状态码为：200
+2022-02-22 06:00:03.293 | INFO     | tools.handle_requests:send_req:49 - 响应body为：
+{"result":0,"msg":"成功","data":"TE+LXVvH14ka6mKOTPLm51mefjtSOOD2a3hOWO9JA5GBgVXhyvur9soimxJugvc5FTfuwFaIby0wFWjVa9NQ90PdW1tj1TuPTY9spE9SfRs="}
+2022-02-22 06:00:03.293 | INFO     | tools.handle_assert:assert_resp:20 - 断言表达式、期望结果和比对方式为：
+{'expr': '$.result', 'expected': 0, 'compare_type': '=='}
+2022-02-22 06:00:03.293 | INFO     | tools.handle_assert:assert_resp:23 - 提取的jsonpath表达式为：$.result
+2022-02-22 06:00:03.293 | INFO     | tools.handle_assert:assert_resp:24 - 提取之后的结果为(为列表，比对的是列表里面的值)：[0]
+2022-02-22 06:00:03.293 | INFO     | tools.handle_assert:assert_resp:25 - 期望结果为：0
+2022-02-22 06:00:03.293 | INFO     | tools.handle_assert:assert_resp:27 - 比对期望和实际是否相等！
+2022-02-22 06:00:03.293 | INFO     | tools.handle_assert:assert_resp:30 - 比对成功！
+2022-02-22 06:00:03.293 | INFO     | tools.handle_assert:assert_resp:20 - 断言表达式、期望结果和比对方式为：
+{'expr': '$.msg', 'expected': '成功', 'compare_type': '=='}
+2022-02-22 06:00:03.293 | INFO     | tools.handle_assert:assert_resp:23 - 提取的jsonpath表达式为：$.msg
+2022-02-22 06:00:03.293 | INFO     | tools.handle_assert:assert_resp:24 - 提取之后的结果为(为列表，比对的是列表里面的值)：['成功']
+2022-02-22 06:00:03.293 | INFO     | tools.handle_assert:assert_resp:25 - 期望结果为：成功
+2022-02-22 06:00:03.293 | INFO     | tools.handle_assert:assert_resp:27 - 比对期望和实际是否相等！
+2022-02-22 06:00:03.293 | INFO     | tools.handle_assert:assert_resp:30 - 比对成功！
+2022-02-22 06:00:03.293 | INFO     | test_01_login:tearDownClass:32 - 
+============= 登录 接口测试结束！ ==============
+2022-02-22 06:00:03.293 | INFO     | test_02_Dashboard:setUpClass:26 - 
+============= Dashboard 接口测试开始！ ==============
+2022-02-22 06:00:03.293 | INFO     | test_02_Dashboard:test_dashboard:34 - 
+********* 前置 - 登录成功 用例 ********
+2022-02-22 06:00:03.309 | INFO     | tools.handle_requests:__header:56 - 请求headers为：{'Content-Type': 'application/json'}
+2022-02-22 06:00:03.309 | INFO     | tools.handle_requests:__url:79 - 请求url为：http://192.168.88.128:20000/api/certification/modelLoginSBH
+2022-02-22 06:00:03.309 | INFO     | tools.handle_requests:send_req:38 - 请求method为：post
+2022-02-22 06:00:03.440 | INFO     | tools.handle_requests:send_req:48 - http响应状态码为：200
+2022-02-22 06:00:03.440 | INFO     | tools.handle_requests:send_req:49 - 响应body为：
+{"result":0,"msg":"成功","data":"TE+LXVvH14ka6mKOTPLm51mefjtSOOD2a3hOWO9JA5GBgVXhyvur9soimxJugvc5FTfuwFaIby0wFWjVa9NQ90BQhijVMRCPkszxjKYQHpE="}
+2022-02-22 06:00:03.440 | INFO     | tools.handle_extract:extract_data_from_response_dict:17 - 提取的变量名是：token，提取的jsonpath表达式是：$..data
+2022-02-22 06:00:03.440 | INFO     | tools.handle_extract:extract_data_from_response_dict:20 - jsonpath提取之后的值为:['TE+LXVvH14ka6mKOTPLm51mefjtSOOD2a3hOWO9JA5GBgVXhyvur9soimxJugvc5FTfuwFaIby0wFWjVa9NQ90BQhijVMRCPkszxjKYQHpE=']
+2022-02-22 06:00:03.440 | INFO     | tools.handle_extract:extract_data_from_response_dict:25 - 提取的变量名是：token，提取到的值是：TE+LXVvH14ka6mKOTPLm51mefjtSOOD2a3hOWO9JA5GBgVXhyvur9soimxJugvc5FTfuwFaIby0wFWjVa9NQ90BQhijVMRCPkszxjKYQHpE=,并设置为Data类实例化对象的属性和值。
+2022-02-22 06:00:03.440 | INFO     | test_02_Dashboard:test_dashboard:34 - 
+********* 通过Id找到公司详细信息 用例 ********
+2022-02-22 06:00:03.440 | INFO     | tools.handle_requests:__header:56 - 请求headers为：{'Content-Type': 'application/json', 'x-access-token': 'TE+LXVvH14ka6mKOTPLm51mefjtSOOD2a3hOWO9JA5GBgVXhyvur9soimxJugvc5FTfuwFaIby0wFWjVa9NQ90BQhijVMRCPkszxjKYQHpE='}
+2022-02-22 06:00:03.440 | INFO     | tools.handle_requests:__url:79 - 请求url为：http://192.168.88.128:20000/api/tenant/company/findCompanyDetailById
+2022-02-22 06:00:03.440 | INFO     | tools.handle_requests:send_req:38 - 请求method为：post
+2022-02-22 06:00:03.487 | INFO     | tools.handle_requests:send_req:48 - http响应状态码为：200
+2022-02-22 06:00:03.487 | INFO     | tools.handle_requests:send_req:49 - 响应body为：
+{"result":0,"msg":"成功","data":{"id":8,"createTime":1614148538000,"updateTime":1624261150000,"companyName":"埃睿迪科技","certificateType":1,"certificateName":"企业营业执照","attachedPath":"/group1/M00/00/30/wKhYg2Db54WADcxKAAAOP_rThbc510.jpg","certificationType":0,"certificationName":"吴六七","certificationPhone":"13800138000","certificationCardIs":"group1/M00/00/09/PaDdMWA8Wx-AV9COABF77KEJilA474.jpg","certificationCardThe":"group1/M00/00/09/PaDdMWA8WyOAMFD6AAAQmlk6gno276.png","auditStatus":1,"tenantUserId":84,"logoPath":"group1/M00/00/09/PaDdMWA8WxSAOUtoAAAQmlk6gno414.png"}}
+2022-02-22 06:00:03.487 | INFO     | tools.handle_assert:assert_resp:20 - 断言表达式、期望结果和比对方式为：
+{'expr': '$..result', 'expected': 0, 'compare_type': '=='}
+2022-02-22 06:00:03.487 | INFO     | tools.handle_assert:assert_resp:23 - 提取的jsonpath表达式为：$..result
+2022-02-22 06:00:03.487 | INFO     | tools.handle_assert:assert_resp:24 - 提取之后的结果为(为列表，比对的是列表里面的值)：[0]
+2022-02-22 06:00:03.487 | INFO     | tools.handle_assert:assert_resp:25 - 期望结果为：0
+2022-02-22 06:00:03.487 | INFO     | tools.handle_assert:assert_resp:27 - 比对期望和实际是否相等！
+2022-02-22 06:00:03.487 | INFO     | tools.handle_assert:assert_resp:30 - 比对成功！
+2022-02-22 06:00:03.493 | INFO     | tools.handle_assert:assert_resp:20 - 断言表达式、期望结果和比对方式为：
+{'expr': '$..msg', 'expected': '成功', 'compare_type': '=='}
+2022-02-22 06:00:03.493 | INFO     | tools.handle_assert:assert_resp:23 - 提取的jsonpath表达式为：$..msg
+2022-02-22 06:00:03.493 | INFO     | tools.handle_assert:assert_resp:24 - 提取之后的结果为(为列表，比对的是列表里面的值)：['成功']
+2022-02-22 06:00:03.493 | INFO     | tools.handle_assert:assert_resp:25 - 期望结果为：成功
+2022-02-22 06:00:03.493 | INFO     | tools.handle_assert:assert_resp:27 - 比对期望和实际是否相等！
+2022-02-22 06:00:03.493 | INFO     | tools.handle_assert:assert_resp:30 - 比对成功！
+2022-02-22 06:00:03.493 | INFO     | test_02_Dashboard:tearDownClass:30 - 
+============= Dashboard 接口测试结束！ ==============

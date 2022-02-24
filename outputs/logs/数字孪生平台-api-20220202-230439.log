@@ -1,0 +1,28 @@
+2022-02-21 23:04:40.010 | INFO     | tools.handle_excel:__init__:13 - 当前打开的excel文件为:F:\Pychram-Workspace\ireadyApiAuto\testdatas\cases.xlsx
+2022-02-21 23:04:40.035 | INFO     | tools.handle_excel:select_sheet_by_name:24 - 当前正在操作的表单名是:Dashboard
+2022-02-21 23:04:40.036 | INFO     | tools.handle_excel:read_all_rows_data:41 - 用例数据为:
+{'id': 0, 'title': '前置 - 登录成功', 'method': 'post', 'url': 'api/certification/modelLoginSBH', 'pre_sql': None, 'req_data': '{"userName": "ireadyit","password": "156b8903c4bb6fbf2b627cd65da76082","modelLoginType": 2,"loginType": 1}', 'extract': None, 'asert_expr': None, 'code': None, 'assert_db': None}
+2022-02-21 23:04:40.041 | INFO     | tools.handle_excel:read_all_rows_data:41 - 用例数据为:
+{'id': None, 'title': '通过Id找到公司详细信息', 'method': 'post', 'url': 'api/tenant/company/findCompanyDetailById', 'pre_sql': None, 'req_data': '{"id":8}', 'extract': None, 'asert_expr': '[{"expr":"$..result","expected":0,"compare_type":"=="},\n{"expr":"$..msg","expected":"成功","compare_type":"=="}]', 'code': None, 'assert_db': None}
+2022-02-21 23:04:40.042 | INFO     | test_02_Dashboard:setUpClass:26 - 
+============= Dashboard 接口测试开始！ ==============
+2022-02-21 23:04:40.042 | INFO     | test_02_Dashboard:test_dashboard:34 - 
+********* 前置 - 登录成功 用例 ********
+2022-02-21 23:04:40.043 | INFO     | tools.handle_requests:__header:56 - 请求headers为：{'Content-Type': 'application/json'}
+2022-02-21 23:04:40.043 | INFO     | tools.handle_requests:__url:79 - 请求url为：http://192.168.88.128:20000/api/certification/modelLoginSBH
+2022-02-21 23:04:40.044 | INFO     | tools.handle_requests:send_req:38 - 请求method为：post
+2022-02-21 23:04:40.044 | INFO     | tools.handle_requests:__body:71 - 请求datas为：{"userName": "ireadyit","password": "156b8903c4bb6fbf2b627cd65da76082","modelLoginType": 2,"loginType": 1}
+2022-02-21 23:04:40.365 | INFO     | tools.handle_requests:send_req:48 - http响应状态码为：200
+2022-02-21 23:04:40.366 | INFO     | tools.handle_requests:send_req:49 - 响应body为：
+{"result":0,"msg":"成功","data":"TE+LXVvH14ka6mKOTPLm51mefjtSOOD2a3hOWO9JA5GBgVXhyvur9soimxJugvc5FTfuwFaIby0wFWjVa9NQ91mEbqpwZ1CRcNdJXKcJWbM="}
+2022-02-21 23:04:40.366 | INFO     | test_02_Dashboard:test_dashboard:34 - 
+********* 通过Id找到公司详细信息 用例 ********
+2022-02-21 23:04:40.367 | INFO     | tools.handle_requests:__header:56 - 请求headers为：{'Content-Type': 'application/json'}
+2022-02-21 23:04:40.367 | INFO     | tools.handle_requests:__url:79 - 请求url为：http://192.168.88.128:20000/api/tenant/company/findCompanyDetailById
+2022-02-21 23:04:40.367 | INFO     | tools.handle_requests:send_req:38 - 请求method为：post
+2022-02-21 23:04:40.368 | INFO     | tools.handle_requests:__body:71 - 请求datas为：{"id":8}
+2022-02-21 23:04:40.659 | INFO     | tools.handle_requests:send_req:48 - http响应状态码为：401
+2022-02-21 23:04:40.660 | INFO     | tools.handle_requests:send_req:49 - 响应body为：
+
+2022-02-21 23:04:40.672 | INFO     | test_02_Dashboard:tearDownClass:30 - 
+============= Dashboard 接口测试结束！ ==============

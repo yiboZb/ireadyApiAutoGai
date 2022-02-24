@@ -1,0 +1,99 @@
+2022-02-20 08:47:26.747 | INFO     | tools.handle_excel:__init__:13 - 当前打开的excel文件为:F:\Pychram-Workspace\ireadyApiAuto\testdatas\cases.xlsx
+2022-02-20 08:47:26.766 | INFO     | tools.handle_excel:select_sheet_by_name:24 - 当前正在操作的表单名是:登录
+2022-02-20 08:47:26.766 | INFO     | tools.handle_excel:read_all_rows_data:41 - 用例数据为:
+{'id': 1, 'title': '数字孪生登录', 'method': 'post', 'url': 'api/certification/modelLoginSBH', 'pre_sql': None, 'req_data': '{\n    "userName": "ireadyit",\n    "password": "156b8903c4bb6fbf2b627cd65da76082",\n    "modelLoginType": 2,\n    "loginType": 1\n}', 'code': None, 'asert_expr': '[{"expr":"$.code","expected":0,"compare_type":"=="},\n{"expr":"$.msg","expected":"成功","compare_type":"=="}]', 'extract': None, 'assert_db': None}
+2022-02-20 08:47:26.771 | INFO     | test_01_login:setUpClass:27 - 
+============= 登录 接口测试开始！ ==============
+2022-02-20 08:47:26.772 | INFO     | test_01_login:test_login:38 - 
+********* 数字孪生登录 用例 ********
+2022-02-20 08:47:26.772 | INFO     | tools.handle_requests:__header:53 - 请求headers为：{'Content-Type': 'application/json'}
+2022-02-20 08:47:26.772 | INFO     | tools.handle_requests:__url:60 - 请求url为：http://192.168.88.128:20000/api/certification/modelLoginSBH
+2022-02-20 08:47:26.773 | INFO     | tools.handle_requests:send_req:37 - 请求method为：post
+2022-02-20 08:47:26.823 | INFO     | tools.handle_requests:send_req:45 - http响应状态码为：200
+2022-02-20 08:47:26.823 | INFO     | tools.handle_requests:send_req:46 - 响应body为：
+{"result":1,"errCode":"0000","msg":"JSON parse error: Cannot construct instance of `com.ireadyit.insightsx.certification.center.beans.bo.ModelLoginSBHBo` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('{\n    \"userName\": \"ireadyit\",\n    \"password\": \"156b8903c4bb6fbf2b627cd65da76082\",\n    \"modelLoginType\": 2,\n    \"loginType\": 1\n}'); nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot construct instance of `com.ireadyit.insightsx.certification.center.beans.bo.ModelLoginSBHBo` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('{\n    \"userName\": \"ireadyit\",\n    \"password\": \"156b8903c4bb6fbf2b627cd65da76082\",\n    \"modelLoginType\": 2,\n    \"loginType\": 1\n}')\n at [Source: (PushbackInputStream); line: 1, column: 1]","exception":"HttpMessageNotReadableException"}
+2022-02-20 08:47:26.824 | INFO     | tools.handle_assert:assert_resp:20 - 断言表达式、期望结果和比对方式为：
+{'expr': '$.code', 'expected': 0, 'compare_type': '=='}
+2022-02-20 08:47:26.826 | INFO     | tools.handle_assert:assert_resp:23 - 提取的jsonpath表达式为：$.code
+2022-02-20 08:47:26.827 | INFO     | tools.handle_assert:assert_resp:24 - 提取之后的结果为(为列表，比对的是列表里面的值)：False
+2022-02-20 08:47:26.827 | INFO     | tools.handle_assert:assert_resp:25 - 期望结果为：0
+2022-02-20 08:47:26.828 | INFO     | tools.handle_assert:assert_resp:27 - 比对期望和实际是否相等！
+2022-02-20 08:47:26.829 | ERROR    | tools.handle_assert:assert_resp:33 - 期望与实际不相等。
+Traceback (most recent call last):
+
+  File "F:/Pychram-Workspace/ireadyApiAuto/main.py", line 24, in <module>
+    runner.run()
+    │      └ <function TestRunner.run at 0x00000233CC035F28>
+    └ <unittestreport.core.testRunner.TestRunner object at 0x00000233CD1A2940>
+
+  File "C:\Users\86134\.virtualenvs\ireadyApiAuto-MlUkiEJi\lib\site-packages\unittestreport\core\testRunner.py", line 174, in run
+    self.suite.run(res)
+    │    │     │   └ <unittestreport.core.testResult.ReRunResult run=1 errors=0 failures=0>
+    │    │     └ <function TestSuite.run at 0x00000233C9A802F0>
+    │    └ <unittest.suite.TestSuite tests=[<unittest.suite.TestSuite tests=[<unittest.suite.TestSuite tests=[<test_01_login.TestLogin t...
+    └ <unittestreport.core.testRunner.TestRunner object at 0x00000233CD1A2940>
+
+  File "e:\python37\lib\unittest\suite.py", line 122, in run
+    test(result)
+    │    └ <unittestreport.core.testResult.ReRunResult run=1 errors=0 failures=0>
+    └ <unittest.suite.TestSuite tests=[<unittest.suite.TestSuite tests=[<test_01_login.TestLogin testMethod=test_login_001>]>]>
+
+  File "e:\python37\lib\unittest\suite.py", line 84, in __call__
+    return self.run(*args, **kwds)
+           │    │    │       └ {}
+           │    │    └ (<unittestreport.core.testResult.ReRunResult run=1 errors=0 failures=0>,)
+           │    └ <function TestSuite.run at 0x00000233C9A802F0>
+           └ <unittest.suite.TestSuite tests=[<unittest.suite.TestSuite tests=[<test_01_login.TestLogin testMethod=test_login_001>]>]>
+
+  File "e:\python37\lib\unittest\suite.py", line 122, in run
+    test(result)
+    │    └ <unittestreport.core.testResult.ReRunResult run=1 errors=0 failures=0>
+    └ <unittest.suite.TestSuite tests=[<test_01_login.TestLogin testMethod=test_login_001>]>
+
+  File "e:\python37\lib\unittest\suite.py", line 84, in __call__
+    return self.run(*args, **kwds)
+           │    │    │       └ {}
+           │    │    └ (<unittestreport.core.testResult.ReRunResult run=1 errors=0 failures=0>,)
+           │    └ <function TestSuite.run at 0x00000233C9A802F0>
+           └ <unittest.suite.TestSuite tests=[<test_01_login.TestLogin testMethod=test_login_001>]>
+
+  File "e:\python37\lib\unittest\suite.py", line 122, in run
+    test(result)
+    │    └ <unittestreport.core.testResult.ReRunResult run=1 errors=0 failures=0>
+    └ <test_01_login.TestLogin testMethod=test_login_001>
+
+  File "e:\python37\lib\unittest\case.py", line 663, in __call__
+    return self.run(*args, **kwds)
+           │    │    │       └ {}
+           │    │    └ (<unittestreport.core.testResult.ReRunResult run=1 errors=0 failures=0>,)
+           │    └ <function TestCase.run at 0x00000233C9A7B598>
+           └ <test_01_login.TestLogin testMethod=test_login_001>
+
+  File "e:\python37\lib\unittest\case.py", line 615, in run
+    testMethod()
+    └ <bound method TestLogin.test_login of <test_01_login.TestLogin testMethod=test_login_001>>
+
+  File "C:\Users\86134\.virtualenvs\ireadyApiAuto-MlUkiEJi\lib\site-packages\unittestreport\core\dataDriver.py", line 18, in wrapper
+    return func(self, params, *args, **kwargs)
+           │    │     │        │       └ {}
+           │    │     │        └ ()
+           │    │     └ {'id': 1, 'title': '数字孪生登录', 'method': 'post', 'url': 'api/certification/modelLoginSBH', 'pre_sql': None, 'req_data': '{\n   ...
+           │    └ <test_01_login.TestLogin testMethod=test_login_001>
+           └ <function TestLogin.test_login at 0x00000233CD1EE1E0>
+
+  File "F:\Pychram-Workspace\ireadyApiAuto\testcases\test_01_login.py", line 54, in test_login
+    self.assertTrue(assert_resp(res_dict, case["asert_expr"]))
+    │    │          │           │         └ {'id': 1, 'title': '数字孪生登录', 'method': 'post', 'url': 'api/certification/modelLoginSBH', 'pre_sql': None, 'req_data': '{\n   ...
+    │    │          │           └ {'result': 1, 'errCode': '0000', 'msg': 'JSON parse error: Cannot construct instance of `com.ireadyit.insightsx.certification...
+    │    │          └ <function assert_resp at 0x00000233CD16C158>
+    │    └ <function TestCase.assertTrue at 0x00000233C9A7B950>
+    └ <test_01_login.TestLogin testMethod=test_login_001>
+
+> File "F:\Pychram-Workspace\ireadyApiAuto\tools\handle_assert.py", line 29, in assert_resp
+    assert actual_list[0] == assert_one["expected"]
+           │                 └ {'expr': '$.code', 'expected': 0, 'compare_type': '=='}
+           └ False
+
+TypeError: 'bool' object is not subscriptable
+2022-02-20 08:47:26.879 | INFO     | test_01_login:tearDownClass:33 - 
+============= 登录 接口测试结束！ ==============
